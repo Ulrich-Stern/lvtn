@@ -1,0 +1,14 @@
+#back-to-top {
+    display: none;
+    background-color: white;
+    padding: 3px 5px 3px 5px;
+    border-radius: 30px;
+    border: 2px solid grey;
+    box-shadow: 0 0 5px grey;
+    position: fixed;
+    bottom: 200px;
+    right: 30px;
+}
+#back-to-top:hover {
+    cursor: pointer;
+}

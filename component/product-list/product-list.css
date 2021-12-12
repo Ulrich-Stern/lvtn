@@ -1,0 +1,32 @@
+#product-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px auto 50px auto;
+    width: 90%;
+    text-align: center;
+}
+.product-card {
+    vertical-align: top;
+    margin: 2px;
+    display: inline-block;
+    width: 24%;
+}
+.product-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px lightgrey;
+}
+.product-name {
+    padding: 2px;
+}
+.product-price {
+    padding: 2px 0px 5px 0px;
+}
+#search-msg{
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+@media only screen and (max-width: 800px) {
+    #product-container .product-card {
+        width: 47%;
+    }
+}

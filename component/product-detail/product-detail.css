@@ -1,0 +1,240 @@
+.detail-container {
+  margin-top: 30px;
+  width: 100%;
+}
+.detail-col-1 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 40%;
+}
+.detail-col-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 59%;
+}
+
+.slideshow-container {
+  /*max-width: 100px;*/
+  width: 80%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  aspect-ratio: 918 / 739;
+}
+
+.slideshow-inner {
+  aspect-ratio: inherit;
+}
+
+.mySlides {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  min-height: inherit;
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  /*height: 400px;*/
+  /*border: solid 1px black;*/
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #222428;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.prev {
+  left: 0px;
+  border-radius: 3px 3px 3px 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #222428;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.detail-name {
+  font-size: 30px;
+  width: 95%;
+  border-bottom: 2px solid gray;
+}
+.detail-info {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.detail-info p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.size-input input {
+  position: absolute;
+  opacity: 0;
+}
+.size-input {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.size-input label {
+  display: block;
+  width: 100px;
+  background: #f2f2f2;
+  padding: 2px 10px 2px 10px;
+  width: 91px;
+  border: 1px solid transparent; /* keeps layout from jumping */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.size-input label:hover {
+  background-color: lightgrey;
+}
+.size-input input[type="radio"]:checked + label {
+  background: skyblue;
+  color: white;
+}
+.price {
+  margin-top: 30px;
+  font-size: 30px;
+}
+.detail-container form input[type="submit"] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  border: 0;
+  transition: all 0.2s ease;
+}
+.detail-container form input[type="submit"]:hover {
+  background-color: skyblue;
+  color: white;
+}
+
+
+.review {
+  position: relative;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  width: 80%;
+}
+.review-avatar {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightgray;
+  border-radius: 50%;
+}
+.review-name {
+  margin-top: 14px;
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: top;
+}
+.review-content {
+  margin-left: 70px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.review-content p {
+  margin-bottom: 15px;
+}
+.review-quality {
+  margin-bottom: 10px;
+}
+.review textarea {
+  width: 80%;
+  padding: 5px;
+  font-size: 17px;
+  transition: all .2s ease;
+}
+.review textarea:focus {
+  box-shadow: 0 0 5px lightskyblue;
+  outline: none;
+  border: 1px solid white;
+}
+.review textarea:hover{
+  box-shadow: 0 0 5px lightskyblue;
+  outline: none;
+  border: 1px solid white;
+}
+@media only screen and (max-width: 600px) {
+  .detail-container .detail-col-1 {
+    display: block;
+    text-align: center;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  .detail-container .detail-col-2 {
+    margin: auto;
+    display: block;
+    width: 90%;
+  }
+  .detail-container .detail-name {
+    width: 100%;
+  }
+}

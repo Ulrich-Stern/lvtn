@@ -1,0 +1,216 @@
+#contact-bar {
+  text-align: center;
+  width: 100%;
+  background-color: #ececec;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+#header-logo {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 100px;
+  height: 100px;
+}
+#header-content {
+  height: 120px;
+  border-bottom: 1px solid lightgray;
+}
+#header-search input[type="submit"] {
+  padding: 5px;
+  position: absolute;
+  margin-top: 8px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../../images/search-icon.png);
+  background-size: 40px;
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  border: 0;
+}
+#header-search input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#header-search input[type="text"] {
+  background-color: #f3f3f3;
+  margin: 10px;
+  padding: 3px 20px 3px 20px;
+  width: 85%;
+  height: 30px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+}
+#header-search:hover {
+  box-shadow: 0 0 5px grey;
+}
+#header-search {
+  transition: box-shadow 0.3s ease-in-out;
+  top: 60px;
+  background-color: #f3f3f3;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#header-user {
+  border: 2px solid lightgray;
+  border-radius: 50%;
+  margin-top: 36px;
+  margin-right: 10px;
+  float: right;
+  width: 45px;
+  height: 45px;
+}
+#header-shopping-bag {
+  margin-top: 35px;
+  margin-right: 10px;
+  float: right;
+  width: 45px;
+  height: 45px;
+}
+#header-num-items {
+  position: absolute;
+  top: 87px;
+  right: 214px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+.btn-login {
+  float: right;
+  margin-top: 38px;
+  margin-right: 20px;
+  font-size: 15px;
+  min-width: 80px;
+  text-align: center;
+  padding: 10px 14px 12px 14px;
+  background-color: skyblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 35px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+#header-content .btn-logout:hover {
+  background-color: #ff7f7f;
+  box-shadow: 0 0 5px lightgrey;
+}
+.btn-login:hover {
+  background-color: greenyellow;
+  box-shadow: 0 0 5px lightgrey;
+}
+
+#redirect-bar {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+#redirect-bar ul {
+  text-align: center;
+  width: 100%;
+}
+
+#redirect-bar ul li {
+  padding: 0;
+  display: inline-block;
+  line-height: 30px;
+  list-style: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 0;
+}
+#redirect-bar ul li:hover {
+  cursor: pointer;
+}
+
+#redirect-bar ul li:hover:after {
+  border-bottom: 2px solid #3f3f3f;
+  cursor: pointer;
+  transform: scaleX(1);
+}
+
+#redirect-bar ul li a {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+li:after {
+  display: block;
+  content: "";
+  border-bottom: 2px solid #3f3f3f;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+#redirect-bar .dropdown-menu a {
+  text-decoration: none;
+  color: #000;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 155px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+}
+li:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ececec;
+}
+@media only screen and (max-width: 900px) {
+    #page-header #contact-bar{
+        font-size: 12px;
+    }
+    #page-header #header-logo{
+        margin-top:30px;
+        width: 60px;
+        height: 60px;
+    }
+    #page-header #header-search{
+        display: block;
+        width: 100%;
+        margin-top: 90px;
+    }
+    #page-header #header-content{
+        height: 190px;
+    }
+    #header-search input[type="text"] {
+        width: 80%;
+    }
+    #page-header #header-num-items {
+        top: 80px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    body #page-header #header-num-items {
+        top: 97px;
+    }
+    #page-header #redirect-bar ul li {
+        padding-top: 10px;
+        font-size: 17px;
+        height: 40px;
+        width: 47%;
+    }
+    #page-header .dropdown-content {
+        min-width: 47%;
+    }
+}

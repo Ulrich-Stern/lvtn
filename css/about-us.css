@@ -1,0 +1,13 @@
+.label-name {
+    width: 90%;
+    margin: 20px auto 0px auto;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 2px solid gray;
+}
+.about-us {
+    width: 90%;
+    font-size: 20px;
+    margin: 20px auto 0px auto; 
+}

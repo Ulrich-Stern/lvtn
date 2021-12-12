@@ -1,0 +1,174 @@
+.profile-container {
+  margin-top: 30px;
+  width: 100%;
+}
+.profile-col-1 {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 30%;
+}
+.profile-col-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+}
+.profile-avatar {
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+.profile-username {
+  font-size: 22px;
+  font-weight: 500;
+}
+.tab {
+  margin-top: 20px;
+}
+.tab button {
+  background-color: white;
+  font-size: 18px;
+  width: 80%;
+  outline: none;
+  border: none;
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  padding: 16px 16px;
+  transition: background-color 0.2s ease;
+}
+.profile-col-1 .tab .active {
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+}
+.tab button:hover {
+  background-color: lightgray;
+  font-weight: 500;
+}
+.profile-col-1 .tab .logout-tab:hover {
+  transition: background-color 0.2s ease;
+  background-color: #ff7f7f;
+  color: white;
+  font-weight: 500;
+}
+.tab-name {
+  padding-left: 10px;
+  font-size: 30px;
+  padding-bottom: 5px;
+  width: 100%;
+  border-bottom: 2px solid gray;
+}
+.tab-content {
+  display: none;
+  width: 90%;
+}
+.profile-col-2 .active {
+  display: block;
+}
+.tab-content form {
+  padding: 50px 20% 0px 5%;
+}
+.tab-content form label {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+}
+.tab-content form input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.tab-content form input:focus {
+  outline: none;
+}
+form .radio-group {
+  position: relative;
+  margin-top: 10px;
+  display: inline-block;
+}
+form .radio-group input {
+  cursor: pointer;
+  width: 15px;
+  opacity: 0;
+  display: inline-block;
+  font-size: 20px;
+}
+
+form .radio-group .checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  background-color: #eee;
+  border-radius: 50%;
+}
+form .radio-group label {
+  margin-left: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.radio-group input:checked ~ .checkmark {
+  background-color: skyblue;
+  box-shadow: 0 0 4px gray;
+}
+.tab-content form .submit-btn {
+  width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.tab-content form .submit-btn:hover {
+  background-color: skyblue;
+  color: white;
+}
+.tab-content form input[type="file"] {
+  cursor: pointer;
+}
+
+.tab-content table {
+  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.tab-content table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid gray;
+}
+.tab-content table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.tab-content table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+@media only screen and (max-width: 700px) {
+  .profile-container .profile-col-1 {
+    display: block;
+    width: 90%;
+    margin: 20px auto 50px auto;
+  }
+  .profile-container .profile-col-2 {
+    margin: auto;
+    display: block;
+    width: 90%;
+  }
+  .profile-container .tab-content {
+    width: 100%;
+  }
+  .profile-container .tab-content table {
+    width: 100%;
+  }
+  .profile-container .tab-content form {
+    padding: 50px 5% 0px 5%;
+  }
+}
